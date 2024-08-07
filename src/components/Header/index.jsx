@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, Icon } from "./style";
 import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -10,6 +10,9 @@ const Header = () => {
   return (
     <div className="container">
       <Container>
+        <div className="menu">
+          <Icon />
+        </div>
         <img src={logo} className="logo" alt="" />
         <div className="sidebar">
           <nav className="sidebar__nav">
