@@ -28,3 +28,19 @@ body {
     width: 90%;
   }
 }
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.dark {
+  color: var(--secondaryColor);
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
