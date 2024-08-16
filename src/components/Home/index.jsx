@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import Showcase from "../Showcase";
 import FAQ from "../FAQ";
 
 const Home = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <Header />
+      <Header open={open} setOpen={setOpen} />
       <Showcase />
-      <FAQ />
-      <Footer />
+      <div style={{ display: open ? "none" : "block" }}>
+        <FAQ />
+        <Footer />
+      </div>
     </div>
   );
 };
