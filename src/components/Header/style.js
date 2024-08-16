@@ -70,7 +70,6 @@ export const Container = styled.div`
       transition: 0.3s;
       top: 0;
       left: 0;
-      /* opacity: ${({ open }) => (open ? 1 : 0)}; */
       z-index: ${({ open }) => (open ? 99 : -99)};
       opacity: ${({ open }) => (open ? 1 : 0)};
       width: 100%;
