@@ -10,10 +10,10 @@ const Header = ({ open, setOpen }) => {
   return (
     <div className="container">
       <Container open={open}>
-        <div className="menu">
+        <div className="menu d-none">
           <Icon onClick={() => setOpen(true)} />
         </div>
-        <img src={logo} className="logo" alt="" />
+        <img src={logo} className="logo d-none" alt="" />
         <div className="sidebar">
           <div className="sidebar__top">
             <div className="sidebar__top__content container">
@@ -56,7 +56,7 @@ const Header = ({ open, setOpen }) => {
         </div>
         <select
           onChange={(e) => i18n.changeLanguage(e.target.value)}
-          className="language"
+          className="language d-none"
           value={i18n.language}
         >
           <option value="uz">Uzbek</option>

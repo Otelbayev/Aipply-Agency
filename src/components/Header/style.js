@@ -64,6 +64,11 @@ export const Container = styled.div`
       background-color: var(--secondaryColor);
     }
   }
+
+  .d-none {
+    display: ${({ open }) => (open ? "none" : "block")};
+  }
+
   @media (max-width: 950px) {
     .sidebar {
       position: fixed;
