@@ -65,3 +65,16 @@ body {
     font-size: 28px;
   }
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 25px !important;
+}
+
+@media screen and (max-width: 900px) {
+  .slick-prev:before,
+  .slick-next:before {
+    display: none !important;
+  }
+}
