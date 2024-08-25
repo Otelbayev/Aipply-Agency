@@ -65,10 +65,6 @@ export const Container = styled.div`
     }
   }
 
-  .d-none {
-    display: ${({ open }) => (open ? "none" : "block")};
-  }
-
   @media (max-width: 950px) {
     .sidebar {
       position: fixed;

@@ -9,7 +9,7 @@ import next from "../../assets/next.svg?react";
 
 export const Container = styled.div`
   .footer-box {
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     background: #081920;
     border-radius: 35px;
     text-align: center;
@@ -82,6 +82,35 @@ export const Container = styled.div`
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .footer-box {
+      &__title {
+        font-size: 50px;
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .footer-box {
+      padding: 20px 20px 30px;
+      border-radius: 15px;
+      &__title {
+        font-size: 26px;
+      }
+      &__desc {
+        font-size: 14px;
+        padding: 20px 20% 30px;
+      }
+    }
+    .content {
+      padding-bottom: 20px;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .bottom {
+      flex-direction: column;
+      gap: 8px;
     }
   }
 `;
