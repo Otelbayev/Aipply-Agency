@@ -32,6 +32,8 @@ export const Container = styled.div`
       border-radius: 8px;
       font-size: 16px;
       font-weight: 500;
+      border: none;
+      cursor: pointer;
     }
     &--brends {
       font-size: 15px;
@@ -42,7 +44,7 @@ export const Container = styled.div`
       align-items: center;
       gap: 15px;
       span {
-        width: 30px;
+        width: 50px;
         height: 2px;
         background: var(--primaryColor);
       }
@@ -70,7 +72,6 @@ export const Container = styled.div`
       height: 15px;
     }
   }
-
   @media screen and (max-width: 950px) {
     .showcase {
       &--title {

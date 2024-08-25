@@ -14,7 +14,7 @@ const Showcase = () => {
             uchun safarga chiqing. Har safar mukammallikni taqdim etishimizga
             ishonishingiz mumkin.
           </div>
-          <div className="showcase--button">Hoziroq bog‘lanish</div>
+          <button className="showcase--button">Hoziroq bog‘lanish</button>
           <div className="showcase--brends">
             <span></span> Bizni tanlagan brendlar <span></span>
           </div>
