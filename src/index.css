@@ -33,6 +33,7 @@ body {
   font-size: 48px;
   font-weight: 700;
   text-align: center;
+  color: inherit;
 }
 
 .dark {
@@ -43,4 +44,24 @@ body {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
+  color: inherit;
+}
+
+.min {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+}
+
+.active-btn:active {
+  opacity: 0.9;
+  transition: 0.3s;
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 28px;
+  }
 }

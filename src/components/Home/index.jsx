@@ -4,6 +4,8 @@ import Footer from "../Footer";
 import Showcase from "../Showcase";
 import FAQ from "../FAQ";
 import Brand from "../Brand";
+import About from "../About";
+import Projects from "../Projects";
 import Services from "../Services";
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
       <Showcase />
       <div style={{ display: open ? "none" : "block" }}>
         <Brand />
+        <About />
+        <Projects />
         <Services />
         <FAQ />
         <Footer />

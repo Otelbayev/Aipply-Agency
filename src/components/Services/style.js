@@ -1,156 +1,204 @@
 import styled from "styled-components";
 
+const btnstyle = `
+  border: none;
+  background: var(--primaryColor);
+  color: var(--secondaryColor);
+  padding: 8px 15px;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 8px;
+  cursor: pointer;
+`;
+
+const $border = `1px solid #50a4fd17`;
+
 export const Container = styled.div`
-  padding: 100px 0;
-  .services {
-    &--min {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--primaryColor);
-      text-transform: uppercase;
-      padding-bottom: 20px;
+  margin: 100px 0;
+  .min {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 30px;
+    &__item {
+      ${btnstyle}
     }
-    &--center {
+  }
+  .promise {
+    margin-top: 100px;
+    .min {
+      text-align: left;
+    }
+    &__content {
       display: flex;
-      align-items: flex-end;
       gap: 30px;
       &--title {
-        font-size: 45px;
-        font-weight: 600;
         width: 50%;
-        span {
-          display: block;
-        }
+        font-size: 48px;
+        font-weight: 600;
       }
       &--right {
         width: 50%;
-        &--title {
-          font-size: 24px;
+        p {
+          padding-top: 10px;
+          font-size: 20px;
           font-weight: 300;
           color: rgba(255, 255, 255, 0.8);
-          margin-bottom: 20px;
         }
-        &--button {
-          padding: 15px 25px;
-          border-radius: 8px;
+        button {
+          ${btnstyle}
+          margin-top: 15px;
+          padding: 10px 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+    &__carts {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      &__item {
+        width: 33.333333%;
+        &--title {
+          font-size: 20px;
+          font-weight: 500;
+          padding: 10px 0;
+        }
+        &--desc {
           font-size: 16px;
-          color: var(--secondaryColor);
-          background-color: var(--primaryColor);
-          border: none;
-          cursor: pointer;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.8);
+        }
+        &:nth-child(1) {
+          padding: 0 30px 30px 0;
+          border-right: ${$border};
+          border-bottom: ${$border};
+        }
+        &:nth-child(2) {
+          padding: 0 30px 30px 30px;
+          border-right: ${$border};
+          border-bottom: ${$border};
+        }
+        &:nth-child(3) {
+          padding: 0 30px 30px 30px;
+          border-bottom: ${$border};
+        }
+        &:nth-child(4) {
+          padding: 30px 30px 30px 0;
+          border-right: ${$border};
+          border-bottom: ${$border};
+        }
+        &:nth-child(5) {
+          padding: 30px;
+          border-right: ${$border};
+          border-bottom: ${$border};
+        }
+        &:nth-child(6) {
+          padding: 30px;
+          border-bottom: ${$border};
+        }
+        &:nth-child(7) {
+          padding: 30px 30px 30px 0;
+          border-right: ${$border};
+        }
+        &:nth-child(8) {
+          padding: 30px;
+          border-right: ${$border};
+        }
+        &:nth-child(9) {
+          padding: 30px;
         }
       }
     }
   }
-  .items {
-    display: flex;
-    gap: 20px;
-    margin-top: 80px;
-    &--item {
-      width: 33%;
-      &--top {
-        display: flex;
-        align-items: center;
-        &--img {
-          background: var(--primaryColor);
-          width: 93px;
-          height: 93px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 50%;
-        }
-        &--arrow {
-          width: 65%;
-          z-index: -1;
-        }
-      }
-      &--title {
-        font-size: 26px;
-        font-weight: 500;
-        padding: 20px 0;
-      }
-      &--desc {
-        font-size: 18px;
-        font-weight: 300;
-        color: rgba(255, 255, 255, 0.8);
-      }
-    }
-  }
-  @media screen and (max-width: 888px) {
-    .services {
-      &--center {
-        gap: 10px;
-        &--title {
-          width: 60%;
-          font-size: 35px;
-        }
-        &--right {
-          width: 40%;
-          &--title {
-            font-size: 18px;
+
+  @media screen and (max-width: 1000px) {
+    .promise {
+      &__carts {
+        &__item {
+          width: 50%;
+          &:nth-child(1) {
+            padding: 0 30px 30px 0;
+            border-right: ${$border};
+            border-bottom: ${$border};
           }
-          &--button {
-            padding: 8px 14px;
+          &:nth-child(2) {
+            padding: 0 30px 30px 30px;
+            border-right: none;
+            border-bottom: ${$border};
           }
-        }
-      }
-    }
-    .items {
-      flex-direction: column;
-      &--item {
-        width: 100%;
-        display: flex;
-        gap: 20px;
-        &--top {
-          flex-direction: column;
-          align-items: flex-start;
-          &--img {
-            background: var(--primaryColor);
-            width: 50px;
-            height: 50px;
-            img {
-              width: 23px;
-            }
+          &:nth-child(3) {
+            padding: 30px 30px 30px 0;
+            border-bottom: ${$border};
+            border-right: ${$border};
           }
-          &--arrow {
-            transform: translateX(-40px) rotate(90deg);
-            display: none;
+          &:nth-child(4) {
+            padding: 30px;
+            border-right: none;
+            border-bottom: ${$border};
           }
-        }
-        &--title {
-          padding: 0;
+          &:nth-child(5) {
+            padding: 30px 30px 30px 0;
+            border-right: ${$border};
+            border-bottom: ${$border};
+          }
+          &:nth-child(6) {
+            padding: 30px;
+            border-bottom: ${$border};
+          }
+          &:nth-child(7) {
+            padding: 30px 30px 30px 0;
+            border-right: ${$border};
+            border-bottom: ${$border};
+          }
+          &:nth-child(8) {
+            padding: 30px;
+            border-right: none;
+            border-bottom: ${$border};
+          }
+          &:nth-child(9) {
+            padding: 30px 30px 30px 0;
+            border-right: ${$border};
+          }
         }
       }
     }
   }
-  @media screen and (max-width: 700px) {
-    .services {
-      &--center {
+  @media screen and (max-width: 800px) {
+    .promise {
+      margin-top: 60px;
+      .min {
+        text-align: center;
+      }
+      &__content {
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 0px;
         &--title {
           width: 100%;
+          font-size: 28px;
         }
         &--right {
           width: 100%;
+          font-size: 20px;
         }
       }
     }
   }
-  @media screen and (max-width: 500px) {
-    .services {
-      &--center {
-        &--title {
-          font-size: 28px;
-          span {
-            display: inline;
-          }
-        }
-        &--right {
+  @media screen and (max-width: 650px) {
+    .promise {
+      &__carts {
+        &__item {
           width: 100%;
-          &--title {
-            line-height: 28px;
-          }
+          border: none !important;
+          padding: 20px 0 !important;
         }
       }
     }
