@@ -54,6 +54,9 @@ body {
   text-transform: uppercase;
 }
 
+.active-btn {
+  cursor: pointer;
+}
 .active-btn:active {
   opacity: 0.9;
   transition: 0.3s;

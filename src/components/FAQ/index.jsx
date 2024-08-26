@@ -2,12 +2,16 @@ import React from "react";
 import { Container } from "./style";
 import Accordion from "./Accordion";
 import FaqForm from "./FaqForm";
-const FAQ = () => {
+import { useTranslation } from "react-i18next";
+const FAQ = ({ faqRef }) => {
+  const { t } = useTranslation();
   return (
     <Container>
       <div className="container">
-        <div className="title">FAQ's</div>
-        <div className="desc">Ko’p beriladigan savollarga javob oling.</div>
+        <div className="title" ref={faqRef}>
+          {t("faq.title")}
+        </div>
+        <div className="desc">{t("faq.desc")}</div>
         <div className="accardion-content">
           <Accordion
             title="Do you have specific princing plans to show?"

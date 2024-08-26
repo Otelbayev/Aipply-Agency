@@ -1,7 +1,102 @@
 {
-    "404": {
-      "title": "Sahifa Topilmadi",
-      "btn": "Bosh Sahifaga O‘tish"
+  "404": {
+    "title": "Sahifa Topilmadi",
+    "btn": "Bosh Sahifaga O‘tish"
+  },
+  "nav": {
+    "about": "Biz haqimizda",
+    "service": "Xizmatlari",
+    "portfolio": "Portfolio",
+    "faq": "FAQ"
+  },
+  "showcase": {
+    "title": "Innovatsion yechimlarga yo’l",
+    "desc": "Biz bilan birga sizning brendingiz raqamli olamda ajralib turishi uchun safarga chiqing. Har safar mukammallikni taqdim etishimizga ishonishingiz mumkin.",
+    "btn": "Hoziroq bog‘lanish"
+  },
+  "brends": {
+    "top": "Bizni tanlagan brendlar",
+    "min": "Bizning yechimlar:",
+    "title1": "Sizning",
+    "title2": "muvaffaqiyatingiz",
+    "title3": "yo’lidagi hamkoringizmiz!",
+    "desc": "Bizning xizmatlarimiz sizning biznesingizni yangi cho’qqilarga olib chiqishga mo’ljallangan.",
+    "btn": "Bepul konsultatsiya",
+    "item1": "Dasturlash",
+    "item1-desc": "Korporativ veb saytlardan tortib veb ilovalargacha bolgan murakkablikdagi internet saytlarni sifat kafolati bilan ishlab chiqamiz",
+    "item2": "Dizayn",
+    "item2-desc": "Biznesni ilgari surish uchun asosiy vositalar va marketing materiallari to'plamini noldan yaratish.",
+    "item3": "Marketing",
+    "item3-desc": "Biznesingizni marketing strategiyasini ishlab chiqish va qisqa vaqt ichida biznesni marketing bo’limini tizimlashtirish."
+  },
+  "projects": {
+    "title": "Bizning ishlarimiz",
+    "desc": "Bizni tanlashganlar bizdan hursand siz ham natijaga chiqishni istasangiz bizni tanlang",
+    "btn": "Barchasini ko‘rish"
+  },
+  "services": {
+    "min": "Natijangiz uchun",
+    "title": "Qaysi hizmatimizdan foyladanmoqchisiz ?",
+    "btns": {
+      "a": "Web sayt",
+      "b": "Mobil app",
+      "c": "UI/UX dizayn",
+      "d": "Logo branding",
+      "e": "Packaging",
+      "f": "Qo’shimcha dizayn xizmatlari",
+      "g": "Interyer/Eksteryer dizayn",
+      "h": "Vioodeo montaj",
+      "i": "SMM",
+      "j": "Target reklama",
+      "k": "Marketing analiz"
+    },
+    "min1": "Taklifimiz",
+    "title1": "Biz sizga nimani vada beramiz",
+    "desc1": "Aipply Agency sizning g‘oyalaringizni raqamli dunyoda haqiqatga aylantiradi. Biz quyidagi xizmatlar orqali biznesingizni rivojlantirishga yordam beramiz:",
+    "btn": "Ariza qoldirish",
+    "item1": "Web sayt",
+    "item1-desc": "Korporativ veb saytlardan tortib veb ilovalargacha bolgan murakkablikdagi internet saytlarni sifat kafolati bilan ishlab chiqamiz",
+    "item2": "Mobil app",
+    "item2-desc": "Istalgan qiyinchilikdagi mobil ilovalarni ishlab chiqish va ularni texnik qo'llab-quvvatlash",
+    "item3": "UI/UX dizayn",
+    "item3-desc": "Loyiha MindMap'ini ishlab chiqish va ushbu arxitektura asosida optimal yechimga ega dizaynlarni chizish",
+    "item4": "Branding",
+    "item4-desc": "Loyiha MindMap'ini ishlab chiqish va ushbu arxitektura asosida optimal yechimga ega dizaynlarni chizish",
+    "item5": "Marketing",
+    "item5-desc": "Biznesni ilgari surish uchun asosiy vositalar va marketing materiallari to'plamini noldan yaratish.",
+    "item6": "Targeting",
+    "item6-desc": "Mahsulot va xizmatingizni sotuvini oshirish va qo’shimcha yangi mijozlarni jalb qilish uchun biz yordam beramiz.",
+    "item7": "Interyer/Ekeneryer dizayn",
+    "item7-desc": "Uyingizni ichki va tashki ko’rinishini dizaynni mukammal holatda yasab topshiramiz bu orqani ishingiz ancha osonlashadi.",
+    "item8": "Motion dizayn",
+    "item8-desc": "Reklama ro’liklaringizi animatsiyalar bilan qiziqarliroq va kreativ chiqishiga yordam beramiz.",
+    "item9": "Video montaj",
+    "item9-desc": "Deadline va texnik topshiriqlar asosida sizning video va reelslaringni qisqa vaqtda tayyorlab beramiz."
+  },
+  "our": {
+    "title": "Bizning jamoamiz sizga tanishmi?",
+    "desc": "Bizning agentlik mukammal tizimlashgan va deadlinelarga qattiq rioya qiladi jamoamiz azolari esa 5 yillik tajribaga ega masterlar",
+    "employee1": {
+      "title": "15 yillik full stack senior dasturchi Aipply agencyda team lider",
+      "desc": "Shu kunga qadara 500 ta loyihada qatnashgan va temir yo’llar universitetida suniy intellektlar bo’yida dissertatsiya yoqlagan o’zbekiston temir yo’llarini platformasini ishlab chiqishda teamlider bo’lgan",
+      "job": "Full stack dasturchi",
+      "name": "Adham Baxadirovich"
     }
+  },
+  "news": {
+    "min": "Yangiliklar",
+    "title": "Yangiliklar va e’lonlar",
+    "desc": "Brendingning muhimligi va biznesingiz uchun nima sababdan kerakligini bilib oling.",
+    "btn": "Ko’proq o’qish"
+  },
+  "faq": {
+    "title": "FAQ's",
+    "desc": "Ko’p beriladigan savollarga javob oling."
+  },
+  "footer": {
+    "title": "Aipply academy-Inovatision yechimlarga yo‘l",
+    "desc": "Jump on a membership and start requesting designs right away!",
+    "btn": "Hoziroq bog’laning",
+    "desc1": "Kornix - the leading digital agency based in the UK, working with top-tier clients, from start-ups to enterprises."
   }
-  
+}

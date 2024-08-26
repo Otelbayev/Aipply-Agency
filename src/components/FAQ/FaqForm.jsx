@@ -5,6 +5,7 @@ import Message from "./Message";
 const FaqForm = () => {
   const token = "7256007186:AAEBOv_fzh82M_iA1tGyvSPWlCBrlPu4DhI";
   const textRef = useRef();
+  const [type, setType] = useState("");
   const [errorStyle, setErrorStyle] = useState({});
 
   async function sentToBot(botToken, chatId) {
@@ -27,16 +28,26 @@ const FaqForm = () => {
   }
 
   const handleSubmit = async (e) => {
+    setType("loading");
     e.preventDefault();
     if (!textRef.current?.value) {
       setErrorStyle({
         border: "none",
         boxShadow: "1px 1px 10px red",
       });
+      setType("error");
+      setTimeout(() => {
+        setType("");
+      }, 1000);
       return;
     }
     await sentToBot(token, "5942455501");
     textRef.current.value = "";
+    setType("success");
+
+    setTimeout(() => {
+      setType("");
+    }, 1000);
   };
   return (
     <FormContainer>
@@ -55,7 +66,7 @@ const FaqForm = () => {
           <button className="faq-form__content--btn active-btn">Send</button>
         </div>
       </form>
-      <Message type="loading" />
+      <Message type={type} />
     </FormContainer>
   );
 };

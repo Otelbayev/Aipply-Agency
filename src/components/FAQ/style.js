@@ -126,8 +126,19 @@ export const FormContainer = styled.div`
 `;
 export const Msg = styled.div`
   position: fixed;
-  top: 50px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 1px 1px 10px black;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  img {
+    width: 20px;
+  }
 `;
 export const Icon = styled(arrow)``;

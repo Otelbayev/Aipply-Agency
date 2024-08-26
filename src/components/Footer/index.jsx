@@ -1,32 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import { Container, Icons } from "./style";
 import { Button } from "../Generics";
+import { useScroll } from "../../hooks/useScroll";
+import { useTranslation } from "react-i18next";
 
-const Footer = () => {
+const Footer = ({ faqRef, portfolioRef, serviceRef, aboutRef }) => {
+  const { t } = useTranslation();
   return (
     <Container>
       <div className="container">
         <div className="footer-box">
-          <div className="footer-box__title">
-            Aipply academy-Inovatision yechimlarga yo‘l
-          </div>
-          <div className="footer-box__desc">
-            Jump on a membership and start requesting designs right away!
-          </div>
-          <Button>
-            Hoziroq bog’laning <Icons.Next />
-          </Button>
+          <div className="footer-box__title">{t("footer.title")}</div>
+          <div className="footer-box__desc">{t("footer.desc")}</div>
+          <button className="active-btn">
+            {t("footer.btn")} <Icons.Next />
+          </button>
         </div>
         <div className="content">
           <div className="content__left">
             <div className="logo">
               <img src={logo} alt="" />
-              <p>
-                Kornix - the leading digital agency based in the UK, working
-                with top-tier clients, from start-ups to enterprises.
-              </p>
+              <p>{t("footer.desc1")}</p>
             </div>
           </div>
           <div className="content__right">
@@ -60,22 +56,28 @@ const Footer = () => {
           <div className="bottom__left">
             <ul>
               <li>
-                <NavLink>Biz haqimizda</NavLink>
+                <NavLink onClick={() => useScroll(aboutRef)}>
+                  {t("nav.about")}
+                </NavLink>
               </li>
               <li>
-                <NavLink>Xizmatlari</NavLink>
+                <NavLink onClick={() => useScroll(serviceRef)}>
+                  {t("nav.service")}
+                </NavLink>
               </li>
               <li>
-                <NavLink>Portfolio</NavLink>
+                <NavLink onClick={() => useScroll(portfolioRef)}>
+                  {t("nav.portfolio")}
+                </NavLink>
               </li>
               <li>
-                <NavLink>FAQ</NavLink>
+                <NavLink onClick={() => useScroll(faqRef)}>
+                  {t("nav.faq")}
+                </NavLink>
               </li>
             </ul>
           </div>
-          <div className="bottom__right">
-            © 2023 shantogfx - All Right Reserved
-          </div>
+          <div className="bottom__right">© 2024 All Right Reserved</div>
         </div>
       </div>
     </Container>

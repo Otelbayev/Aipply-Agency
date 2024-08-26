@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import Showcase from "../Showcase";
@@ -21,21 +21,37 @@ const Bg = styled.div`
 
 const Home = () => {
   const [open, setOpen] = useState(false);
+  const aboutRef = useRef();
+  const serviceRef = useRef();
+  const portfolioRef = useRef();
+  const faqRef = useRef();
   return (
     <div>
       <Bg>
-        <Header open={open} setOpen={setOpen} />
+        <Header
+          aboutRef={aboutRef}
+          serviceRef={serviceRef}
+          portfolioRef={portfolioRef}
+          faqRef={faqRef}
+          open={open}
+          setOpen={setOpen}
+        />
         <Showcase />
       </Bg>
       <div style={{ display: open ? "none" : "block" }}>
         <Brand />
-        <About />
-        <Projects />
-        <Services />
+        <About aboutRef={aboutRef} />
+        <Projects portfolioRef={portfolioRef} />
+        <Services serviceRef={serviceRef} />
         <Our />
         <News />
-        <FAQ />
-        <Footer />
+        <FAQ faqRef={faqRef} />
+        <Footer
+          aboutRef={aboutRef}
+          serviceRef={serviceRef}
+          portfolioRef={portfolioRef}
+          faqRef={faqRef}
+        />
       </div>
     </div>
   );

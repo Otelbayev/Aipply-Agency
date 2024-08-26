@@ -105,10 +105,10 @@ export const Container = styled.div`
           position: relative;
           &--img {
             background: var(--primaryColor);
-            width: 50px;
-            height: 50px;
+            width: 70px;
+            height: 70px;
             img {
-              width: 23px;
+              width: 40px;
             }
           }
           &--arrow {

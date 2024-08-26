@@ -62,7 +62,7 @@ export const Container = styled.div`
     &__carts {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 50px;
+      margin-top: 100px;
       &__item {
         width: 33.333333%;
         &--title {

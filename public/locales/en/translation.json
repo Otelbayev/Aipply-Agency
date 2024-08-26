@@ -1,7 +1,102 @@
 {
-    "404": {
-      "title": "Page Not Found",
-      "btn": "Go To Home Page"
+  "404": {
+    "title": "Page Not Found",
+    "btn": "Go to Homepage"
+  },
+  "nav": {
+    "about": "About Us",
+    "service": "Services",
+    "portfolio": "Portfolio",
+    "faq": "FAQ"
+  },
+  "showcase": {
+    "title": "Path to Innovative Solutions",
+    "desc": "Join us on a journey to make your brand stand out in the digital world. You can trust us to deliver excellence every time.",
+    "btn": "Contact Now"
+  },
+  "brends": {
+    "top": "Brands That Chose Us",
+    "min": "Our Solutions:",
+    "title1": "Your",
+    "title2": "Success",
+    "title3": "Partner!",
+    "desc": "Our services are designed to take your business to new heights.",
+    "btn": "Free Consultation",
+    "item1": "Development",
+    "item1-desc": "We develop websites of varying complexity, from corporate websites to web applications, with a quality guarantee.",
+    "item2": "Design",
+    "item2-desc": "Creating a complete set of tools and marketing materials from scratch to promote your business.",
+    "item3": "Marketing",
+    "item3-desc": "Developing a marketing strategy for your business and systematizing the marketing department in a short time."
+  },
+  "projects": {
+    "title": "Our Works",
+    "desc": "Those who chose us are happy. If you want to achieve results, choose us.",
+    "btn": "View All"
+  },
+  "services": {
+    "min": "For Your Results",
+    "title": "Which of Our Services Do You Want to Use?",
+    "btns": {
+      "a": "Website",
+      "b": "Mobile App",
+      "c": "UI/UX Design",
+      "d": "Logo Branding",
+      "e": "Packaging",
+      "f": "Additional Design Services",
+      "g": "Interior/Exterior Design",
+      "h": "Video Editing",
+      "i": "SMM",
+      "j": "Targeted Advertising",
+      "k": "Marketing Analysis"
+    },
+    "min1": "Our Offer",
+    "title1": "What We Promise You",
+    "desc1": "Aipply Agency turns your ideas into reality in the digital world. We help grow your business through the following services:",
+    "btn": "Submit Application",
+    "item1": "Website",
+    "item1-desc": "We develop websites of varying complexity, from corporate websites to web applications, with a quality guarantee.",
+    "item2": "Mobile App",
+    "item2-desc": "Developing and providing technical support for mobile applications of any complexity.",
+    "item3": "UI/UX Design",
+    "item3-desc": "Creating project mind maps and designing solutions based on this architecture.",
+    "item4": "Branding",
+    "item4-desc": "Creating project mind maps and designing solutions based on this architecture.",
+    "item5": "Marketing",
+    "item5-desc": "Creating a complete set of tools and marketing materials from scratch to promote your business.",
+    "item6": "Targeting",
+    "item6-desc": "We help increase your product and service sales and attract new customers.",
+    "item7": "Interior/Exterior Design",
+    "item7-desc": "We design the interior and exterior of your home perfectly, making your work much easier.",
+    "item8": "Motion Design",
+    "item8-desc": "We help make your commercials more engaging and creative with animations.",
+    "item9": "Video Editing",
+    "item9-desc": "We prepare your videos and reels in a short time based on deadlines and technical specifications."
+  },
+  "our": {
+    "title": "Is Our Team Familiar to You?",
+    "desc": "Our agency is well-organized and strictly adheres to deadlines. Our team members are experienced masters with 5 years of experience.",
+    "employee1": {
+      "title": "15-year Full Stack Senior Developer, Team Leader at Aipply Agency",
+      "desc": "Has participated in 500 projects and defended a dissertation on artificial intelligence at the University of Railways. He was a team leader in developing the platform for Uzbekistan Railways.",
+      "job": "Full Stack Developer",
+      "name": "Adham Baxadirovich"
     }
+  },
+  "news": {
+    "min": "News",
+    "title": "News and Announcements",
+    "desc": "Learn about the importance of branding and why it’s essential for your business.",
+    "btn": "Read More"
+  },
+  "faq": {
+    "title": "FAQs",
+    "desc": "Get answers to frequently asked questions."
+  },
+  "footer": {
+    "title": "Aipply Academy - Path to Innovative Solutions",
+    "desc": "Jump on a membership and start requesting designs right away!",
+    "btn": "Contact Now",
+    "desc1": "Kornix - the leading digital agency based in the UK, working with top-tier clients, from start-ups to enterprises."
   }
-  
+}

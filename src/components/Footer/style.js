@@ -23,6 +23,13 @@ export const Container = styled.div`
       padding: 20px 35% 60px;
       font-weight: 400;
     }
+    button {
+      padding: 8px 15px;
+      background: var(--primaryColor);
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
   }
   .content {
     display: flex;

@@ -9,100 +9,119 @@ import i6 from "../../assets/i6.svg";
 import i7 from "../../assets/i7.svg";
 import i8 from "../../assets/i8.svg";
 import i9 from "../../assets/i9.svg";
+import { useTranslation } from "react-i18next";
 
-const data = [
-  {
-    id: 1,
-    img: i1,
-    title: "Web sayt",
-    desc: "Korporativ veb saytlardan tortib veb ilovalargacha bolgan murakkablikdagi internet saytlarni sifat kafolati bilan ishlab chiqamiz",
-  },
-  {
-    id: 2,
-    img: i2,
-    title: "Mobil app",
-    desc: "Istalgan qiyinchilikdagi mobil ilovalarni ishlab chiqish va ularni texnik qo'llab-quvvatlash",
-  },
-  {
-    id: 3,
-    img: i3,
-    title: "UI/UX dizayn",
-    desc: "Loyiha MindMap'ini ishlab chiqish va ushbu arxitektura asosida optimal yechimga ega dizaynlarni chizish",
-  },
-  {
-    id: 4,
-    img: i4,
-    title: "Branding",
-    desc: "Loyiha MindMap'ini ishlab chiqish va ushbu arxitektura asosida optimal yechimga ega dizaynlarni chizish",
-  },
-  {
-    id: 5,
-    img: i5,
-    title: "Marketing",
-    desc: "Biznesni ilgari surish uchun asosiy vositalar va marketing materiallari to'plamini noldan yaratish.",
-  },
-  {
-    id: 6,
-    img: i6,
-    title: "Targeting",
-    desc: "Mahsulot va xizmatingizni sotuvini oshirish va qo’shimcha yangi mijozlarni jalb qilish uchun biz yordam beramiz.",
-  },
-  {
-    id: 7,
-    img: i7,
-    title: "Interyer/Ekeneryer dizayn",
-    desc: "Uyingizni ichki va tashki ko’rinishini dizaynni mukammal holatda yasab topshiramiz bu orqani ishingiz ancha osonlashadi.",
-  },
-  {
-    id: 8,
-    img: i8,
-    title: "Motion dizayn",
-    desc: "Reklama ro’liklaringizi animatsiyalar bilan qiziqarliroq va kreativ chiqishiga yordam beramiz.",
-  },
-  {
-    id: 9,
-    img: i9,
-    title: "Video montaj",
-    desc: "Deadline va texnik topshiriqlar asosida sizning video va reelslaringni qisqa vaqtda tayyorlab beramiz.",
-  },
-];
+const Services = ({ serviceRef }) => {
+  const { t } = useTranslation();
 
-const Services = () => {
+  const data = [
+    {
+      id: 1,
+      img: i1,
+      title: t("services.item1"),
+      desc: t("services.item1-desc"),
+    },
+    {
+      id: 2,
+      img: i2,
+      title: t("services.item2"),
+      desc: t("services.item2-desc"),
+    },
+    {
+      id: 3,
+      img: i3,
+      title: t("services.item3"),
+      desc: t("services.item3-desc"),
+    },
+    {
+      id: 4,
+      img: i4,
+      title: t("services.item4"),
+      desc: t("services.item4-desc"),
+    },
+    {
+      id: 5,
+      img: i5,
+      title: t("services.item5"),
+      desc: t("services.item5-desc"),
+    },
+    {
+      id: 6,
+      img: i6,
+      title: t("services.item6"),
+      desc: t("services.item6-desc"),
+    },
+    {
+      id: 7,
+      img: i7,
+      title: t("services.item7"),
+      desc: t("services.item7-desc"),
+    },
+    {
+      id: 8,
+      img: i8,
+      title: t("services.item8"),
+      desc: t("services.item8-desc"),
+    },
+    {
+      id: 9,
+      img: i9,
+      title: t("services.item9"),
+      desc: t("services.item9-desc"),
+    },
+  ];
+
   return (
     <Container>
       <div className="container">
-        <div className="min">Natijangiz uchun</div>
-        <div className="title">Qaysi hizmatimizdan foyladanmoqchisiz ?</div>
+        <div className="min" ref={serviceRef}>
+          {t("services.min")}
+        </div>
+        <div className="title">{t("services.title")}</div>
         <div className="buttons">
-          <button className="buttons__item active-btn">Web sayt</button>
-          <button className="buttons__item active-btn">Mobil app</button>
-          <button className="buttons__item active-btn">UI/UX dizayn</button>
-          <button className="buttons__item active-btn">Logo branding</button>
-          <button className="buttons__item active-btn">Packaging</button>
           <button className="buttons__item active-btn">
-            Qo’shimcha dizayn xizmatlari
+            {t("services.btns.a")}
           </button>
           <button className="buttons__item active-btn">
-            Interyer/Eksteryer dizayn
+            {t("services.btns.b")}
           </button>
-          <button className="buttons__item active-btn">Vioodeo montaj</button>
-          <button className="buttons__item active-btn">SMM</button>
-          <button className="buttons__item active-btn">Target reklama</button>
-          <button className="buttons__item active-btn">Marketing analiz</button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.c")}
+          </button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.d")}
+          </button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.e")}
+          </button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.f")}
+          </button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.g")}
+          </button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.h")}
+          </button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.i")}
+          </button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.j")}
+          </button>
+          <button className="buttons__item active-btn">
+            {t("services.btns.k")}
+          </button>
         </div>
         <div className="promise">
-          <div className="min">Taklifimiz</div>
+          <div className="min">{t("services.min1")}</div>
           <div className="promise__content">
             <div className="promise__content--title">
-              Biz sizga nimani vada beramiz
+              {t("services.title1")}
             </div>
             <div className="promise__content--right">
-              <p>
-                Aipply Agency sizning g‘oyalaringizni raqamli dunyoda haqiqatga
-                aylantiradi. Biz quyidagi xizmatlar orqali biznesingizni
-                rivojlantirishga yordam beramiz:
-              </p>
-              <button className="active-btn">Ariza qoldirish</button>
+              <p>{t("services.desc1")}</p>
+              <button className="active-btn">{t("services.btn")}</button>
             </div>
           </div>
           <div className="promise__carts">

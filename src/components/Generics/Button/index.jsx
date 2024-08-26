@@ -17,8 +17,12 @@ const Container = styled(NavLink)`
   }
 `;
 
-const Button = ({ children, to }) => {
-  return <Container to={to}>{children}</Container>;
+const Button = ({ children, to, className }) => {
+  return (
+    <Container className={className} to={to}>
+      {children}
+    </Container>
+  );
 };
 
 export default Button;

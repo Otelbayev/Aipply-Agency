@@ -4,25 +4,27 @@ import icon1 from "../../assets/icon1.svg";
 import icon2 from "../../assets/icon2.svg";
 import icon3 from "../../assets/icon3.svg";
 import next from "../../assets/nex.svg";
+import { useTranslation } from "react-i18next";
 
-const About = () => {
+const About = ({ aboutRef }) => {
+  const { t } = useTranslation();
   return (
     <Container>
-      <div className="container">
+      <div className="container" ref={aboutRef}>
         <div className="services">
-          <div className="services--min min">Bizning yechimlar:</div>
+          <div className="services--min min">{t("brends.min")}</div>
           <div className="services--center">
             <div className="services--center--title">
-              <span>Sizning</span> <span>muvaffaqiyatingiz</span>{" "}
-              <span>yo’lidagi hamkoringizmiz!</span>
+              <span>{t("brends.title1")}</span>
+              <span>{t("brends.title2")}</span>
+              <span>{t("brends.title3")}</span>
             </div>
             <div className="services--center--right">
               <p className="services--center--right--title">
-                Bizning xizmatlarimiz sizning biznesingizni yangi cho’qqilarga
-                olib chiqishga mo’ljallangan.
+                {t("brends.desc")}
               </p>
               <button className="services--center--right--button active-btn">
-                Bepul konsultatsiya
+                {t("brends.btn")}
               </button>
             </div>
           </div>
@@ -36,12 +38,8 @@ const About = () => {
               <img className="items--item--top--arrow" src={next} alt="" />
             </div>
             <div>
-              <div className="items--item--title">Dasturlash</div>
-              <div className="items--item--desc">
-                Korporativ veb saytlardan tortib veb ilovalargacha bolgan
-                murakkablikdagi internet saytlarni sifat kafolati bilan ishlab
-                chiqamiz
-              </div>
+              <div className="items--item--title">{t("brends.item1")}</div>
+              <div className="items--item--desc">{t("brends.item1-desc")}</div>
             </div>
           </div>
           <div className="items--item">
@@ -52,11 +50,8 @@ const About = () => {
               <img className="items--item--top--arrow" src={next} alt="" />
             </div>
             <div>
-              <div className="items--item--title">Dizayn</div>
-              <div className="items--item--desc">
-                Biznesni ilgari surish uchun asosiy vositalar va marketing
-                materiallari to'plamini noldan yaratish.
-              </div>
+              <div className="items--item--title">{t("brends.item2")}</div>
+              <div className="items--item--desc">{t("brends.item2-desc")}</div>
             </div>
           </div>
           <div className="items--item">
@@ -66,11 +61,8 @@ const About = () => {
               </div>
             </div>
             <div>
-              <div className="items--item--title">Marketing</div>
-              <div className="items--item--desc">
-                Biznesingizni marketing strategiyasini ishlab chiqish va qisqa
-                vaqt ichida biznesni marketing bo’limini tizimlashtirish
-              </div>
+              <div className="items--item--title">{t("brends.item3")}</div>
+              <div className="items--item--desc">{t("brends.item3-desc")}</div>
             </div>
           </div>
         </div>

@@ -1,11 +1,19 @@
 import React from "react";
 import { Container, Icon, X } from "./style";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useScroll } from "../../hooks/useScroll";
 
-const Header = ({ open, setOpen }) => {
-  const { i18n } = useTranslation();
+const Header = ({
+  open,
+  setOpen,
+  faqRef,
+  portfolioRef,
+  serviceRef,
+  aboutRef,
+}) => {
+  const { i18n, t } = useTranslation();
 
   return (
     <div className="container">
@@ -35,16 +43,24 @@ const Header = ({ open, setOpen }) => {
           <nav className="sidebar__nav">
             <ul>
               <li>
-                <NavLink>Biz haqimizda</NavLink>
+                <NavLink onClick={() => useScroll(aboutRef)}>
+                  {t("nav.about")}
+                </NavLink>
               </li>
               <li>
-                <NavLink>Xizmatlari</NavLink>
+                <NavLink onClick={() => useScroll(serviceRef)}>
+                  {t("nav.service")}
+                </NavLink>
               </li>
               <li>
-                <NavLink>Portfolio</NavLink>
+                <NavLink onClick={() => useScroll(portfolioRef)}>
+                  {t("nav.portfolio")}
+                </NavLink>
               </li>
               <li>
-                <NavLink>FAQ</NavLink>
+                <NavLink onClick={() => useScroll(faqRef)}>
+                  {t("nav.faq")}
+                </NavLink>
               </li>
             </ul>
           </nav>
