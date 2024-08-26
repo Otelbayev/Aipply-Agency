@@ -15,9 +15,6 @@ export const Container = styled.div`
     }
   }
 `;
-
-export const Icon = styled(arrow)``;
-
 export const AccordionContainer = styled.div`
   margin: 20px 0;
   .accordion {
@@ -87,7 +84,6 @@ export const AccordionContainer = styled.div`
     }
   }
 `;
-
 export const FormContainer = styled.div`
   .faq-form {
     &__input {
@@ -128,3 +124,10 @@ export const FormContainer = styled.div`
     }
   }
 `;
+export const Msg = styled.div`
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+export const Icon = styled(arrow)``;

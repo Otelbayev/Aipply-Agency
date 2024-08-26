@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { FormContainer } from "./style";
+import Message from "./Message";
 
 const FaqForm = () => {
   const token = "7256007186:AAEBOv_fzh82M_iA1tGyvSPWlCBrlPu4DhI";
@@ -54,6 +55,7 @@ const FaqForm = () => {
           <button className="faq-form__content--btn active-btn">Send</button>
         </div>
       </form>
+      <Message type="loading" />
     </FormContainer>
   );
 };

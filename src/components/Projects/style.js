@@ -29,7 +29,7 @@ export const Container = styled.div`
   }
   .projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 50px;
     gap: 20px;
     &--wrap {
