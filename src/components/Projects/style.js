@@ -41,10 +41,10 @@ export const Container = styled.div`
         gap: 20px;
         transition: 0.3s;
         &:nth-child(odd) {
-          animation: anim 2s ease-in-out infinite alternate;
+          animation: anim 4s ease-in-out infinite alternate;
         }
         &:nth-child(even) {
-          animation: anim1 2s ease-in-out infinite alternate;
+          animation: anim1 4s ease-in-out infinite alternate;
         }
         &--img {
           width: 100%;

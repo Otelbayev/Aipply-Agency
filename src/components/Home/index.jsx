@@ -8,6 +8,7 @@ import About from "../About";
 import Projects from "../Projects";
 import Services from "../Services";
 import Our from "../Our";
+import News from "../News";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
         <Projects />
         <Services />
         <Our />
+        <News />
         <FAQ />
         <Footer />
       </div>

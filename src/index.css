@@ -73,8 +73,8 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .slick-prev:before,
-  .slick-next:before {
+  .slick-prev,
+  .slick-next {
     display: none !important;
   }
 }
