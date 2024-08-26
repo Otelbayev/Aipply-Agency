@@ -144,9 +144,6 @@ export const Container = styled.div`
       &--center {
         &--title {
           font-size: 28px;
-          span {
-            display: inline;
-          }
         }
         &--right {
           width: 100%;

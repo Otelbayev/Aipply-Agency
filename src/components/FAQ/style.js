@@ -126,7 +126,7 @@ export const FormContainer = styled.div`
 `;
 export const Msg = styled.div`
   position: fixed;
-  top: 10px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;

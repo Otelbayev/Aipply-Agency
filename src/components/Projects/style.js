@@ -73,10 +73,13 @@ export const Container = styled.div`
   @media screen and (max-width: 900px) {
     .projects {
       flex-direction: column;
+      gap: 5px;
       &--wrap {
-        margin: 0 20px;
+        gap: 5px;
+        margin: 0 5px;
         &--item {
           width: 50%;
+          gap: 5px;
         }
       }
     }

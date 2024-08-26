@@ -43,22 +43,50 @@ const Header = ({
           <nav className="sidebar__nav">
             <ul>
               <li>
-                <NavLink onClick={() => useScroll(aboutRef)}>
+                <NavLink
+                  onClick={() => {
+                    setOpen(false);
+                    setTimeout(() => {
+                      useScroll(aboutRef);
+                    }, 500);
+                  }}
+                >
                   {t("nav.about")}
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={() => useScroll(serviceRef)}>
+                <NavLink
+                  onClick={() => {
+                    setOpen(false);
+                    setTimeout(() => {
+                      useScroll(serviceRef);
+                    }, 500);
+                  }}
+                >
                   {t("nav.service")}
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={() => useScroll(portfolioRef)}>
+                <NavLink
+                  onClick={() => {
+                    setOpen(false);
+                    setTimeout(() => {
+                      useScroll(portfolioRef);
+                    }, 500);
+                  }}
+                >
                   {t("nav.portfolio")}
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={() => useScroll(faqRef)}>
+                <NavLink
+                  onClick={() => {
+                    setOpen(false);
+                    setTimeout(() => {
+                      useScroll(faqRef);
+                    }, 500);
+                  }}
+                >
                   {t("nav.faq")}
                 </NavLink>
               </li>

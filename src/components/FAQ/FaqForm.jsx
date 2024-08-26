@@ -38,7 +38,7 @@ const FaqForm = () => {
       setType("error");
       setTimeout(() => {
         setType("");
-      }, 1000);
+      }, 2000);
       return;
     }
     await sentToBot(token, "5942455501");
