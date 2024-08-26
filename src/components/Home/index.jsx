@@ -9,13 +9,24 @@ import Projects from "../Projects";
 import Services from "../Services";
 import Our from "../Our";
 import News from "../News";
+import styled from "styled-components";
+import bg from "../../assets/bg.png";
+
+const Bg = styled.div`
+  background: url("${bg}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+`;
 
 const Home = () => {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <Header open={open} setOpen={setOpen} />
-      <Showcase />
+      <Bg>
+        <Header open={open} setOpen={setOpen} />
+        <Showcase />
+      </Bg>
       <div style={{ display: open ? "none" : "block" }}>
         <Brand />
         <About />
