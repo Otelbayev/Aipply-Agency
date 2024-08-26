@@ -18,6 +18,36 @@ const News = () => {
             title={t("news.title")}
             desc={t("news.desc")}
           />
+          <Item
+            img={img}
+            min={t("news.min")}
+            title={t("news.title")}
+            desc={t("news.desc")}
+          />
+          <Item
+            img={img}
+            min={t("news.min")}
+            title={t("news.title")}
+            desc={t("news.desc")}
+          />
+          <Item
+            img={img}
+            min={t("news.min")}
+            title={t("news.title")}
+            desc={t("news.desc")}
+          />
+          <Item
+            img={img}
+            min={t("news.min")}
+            title={t("news.title")}
+            desc={t("news.desc")}
+          />
+          <Item
+            img={img}
+            min={t("news.min")}
+            title={t("news.title")}
+            desc={t("news.desc")}
+          />
         </div>
         <div className="button">
           <button className="active-btn">Ko’proq o’qish</button>
